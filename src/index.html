@@ -16,8 +16,30 @@
     <title>Hot-Table Web Component</title>
 </head>
 <body>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript">
-        var app = Elm.Main.fullscreen();
+    <div id="root"></div>
+    <script src="main.js"></script>
+    <script>
+    var root = document.getElementById('root');
+    var app = Elm.Main.embed(root);
+    console.log("app.ports is an " + app.ports);
+
+    app.ports.alterTable.subscribe(function(args) {
+        var domId = args[0];
+        var action = args[1];
+        var index = args[2];
+        if (index < 0) {
+            index = null;
+        }
+        var table = document.getElementById(domId);
+        table.alter(action, index);
+    });
+
+    app.ports.getTableData.subscribe(function(domId) {
+        var table = document.getElementById(domId);
+        var data = table.getData();
+        console.log("table data: " + data);
+        app.ports.tableData.send({ domId: domId, data: data })
+    });
     </script>
+</body>
 </html>

@@ -35,6 +35,9 @@ elm-make src/Main.elm --output=dist/main.js
 
 Note: This project was "ejected" from a `create-elm-app` starter project.
 
+Note: Had problem getting ports (Javascript interop) to work. Solution was
+to `elm-package install elm-lang/http`.
+
 
 ## Deploying
 
