@@ -1,0 +1,20 @@
+{
+  "name": "elm-hot-table",
+  "authors": [
+    "Peter Zingg <peter.zingg@gmail.com>"
+  ],
+  "description": "hot-table webcomponent in Elm",
+  "main": "src/Main.elm",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hot-table": "^0.5.0"
+  }
+}

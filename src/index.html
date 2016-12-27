@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script>
+        // See https://groups.google.com/forum/#!msg/elm-discuss/8Q2xwRh6UYc/tGem48QjAQAJ
+        // and https://www.polymer-project.org/1.0/docs/devguide/settings
+        window.Polymer = {
+            dom: 'shadow',
+            lazyRegister: true
+        };
+    </script>
+    <link rel="import" href="bower_components/hot-table/hot-table.html">
+    <title>Hot-Table Web Component</title>
+</head>
+<body>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+        var app = Elm.Main.fullscreen();
+    </script>
+</html>
