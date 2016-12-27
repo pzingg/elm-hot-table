@@ -55,8 +55,7 @@ mv dist <your_webserver_document_root_here>
 
 Default Value: undefined
 
-Initial data source that will be bound to the data grid by reference (editing data grid alters the data source).
-Can be declared as an Array of Arrays, Array of Objects or a Function.
+Initial data source that will be bound to the data grid by reference (editing data grid alters the data source). Can be declared as an Array of Arrays, Array of Objects or a Function.
 
 `max-rows` (Handsontable `maxRows`)
 
@@ -69,7 +68,7 @@ Handsontable `colHeaders`
 Default Value: null
 
 Setting true or false will enable or disable the default column headers (A, B, C).
-You can also define an array ['One', 'Two', 'Three', ...] or a function to define the headers.
+You can also define an array `['One', 'Two', 'Three', ...]` or a function to define the headers.
 If a function is set, then the index of the column is passed as a parameter.
 
 Handsontable `rowHeaders`
@@ -77,5 +76,5 @@ Handsontable `rowHeaders`
 Default Value: null
 
 Setting true or false will enable or disable the default row headers (1, 2, 3).
-You can also define an array ['One', 'Two', 'Three', ...] or a function to define the headers.
+You can also define an array `['One', 'Two', 'Three', ...]` or a function to define the headers.
 If a function is set the index of the row is passed as a parameter.
